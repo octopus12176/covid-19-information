@@ -1,3 +1,35 @@
+/* 既存のスタイルは維持したまま、科学的事実の強調を追加 */
+.fact-check-card {
+  background: #fff8e1;
+  border-left: 4px solid #ff9800;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+/* 誤った情報のスタイル */
+.fact-content p:first-child {
+  color: #dc2626;
+  background: #fff5f5;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* 科学的事実の強調スタイル */
+.fact-content p:nth-child(2) {
+  color: #065f46;
+  background: #f0fff4;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.6;
+  border-left: 4px solid #059669;
+}
+
+/* 既存のスタイルは変更なし */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -16,6 +48,25 @@
   padding: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.card ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
 }
 
 .card:hover {
@@ -44,21 +95,9 @@
   margin: 40px 0;
 }
 
-/* ファクトチェックセクション */
-.fact {
-  color: red;
-}
-
-.fact-check-card {
-  background: #fff8e1;
-  border-left: 4px solid #ff9800;
-  border-radius: 15px;
-  padding: 25px;
-  margin-bottom: 30px;
-}
-
 .fact-content {
   margin-top: 15px;
+  padding-left: 1.5rem;
 }
 
 .more-info-card {
@@ -150,5 +189,13 @@
 
   .sources-grid {
     grid-template-columns: 1fr;
+  }
+
+  .card ul {
+    padding-left: 1rem;
+  }
+
+  .fact-content {
+    padding-left: 1rem;
   }
 }

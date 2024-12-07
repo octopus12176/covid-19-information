@@ -18,7 +18,40 @@
   margin-bottom: 8px;
 }
 
-/* 感染経路の説明スタイル */
+/* 症状リストのスタイル調整 */
+.detail-section ul {
+  list-style: none;
+  padding-left: 1.5rem; /* リストの左側の余白を追加 */
+  margin: 1rem 0; /* 上下の余白を追加 */
+}
+
+.detail-section ul li {
+  position: relative;
+  padding-left: 1.5rem; /* リストアイテムの内部左余白 */
+  margin-bottom: 0.8rem; /* リストアイテム間の余白 */
+}
+
+.detail-section ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+/* 注意事項ボックスのスタイル */
+.alert-box {
+  background: #fff8e1;
+  border-left: 4px solid #ff9800;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+.alert-box strong {
+  color: #b45309;
+}
+
+/* その他のスタイルは変更なし */
 .transmission-routes {
   display: grid;
   gap: 20px;
@@ -40,7 +73,6 @@
   margin-bottom: 10px;
 }
 
-/* 予防対策のスタイル */
 .prevention-tips {
   list-style: none;
   padding: 0;
@@ -61,7 +93,6 @@
   font-size: 1.5em;
 }
 
-/* 参考資料セクションのスタイル */
 .reference-section {
   background: var(--background);
   padding: 20px;
@@ -90,5 +121,9 @@
 @media (max-width: 768px) {
   .symptoms-list {
     grid-template-columns: 1fr;
+  }
+
+  .detail-section ul {
+    padding-left: 1rem; /* モバイルでの余白を少し調整 */
   }
 }

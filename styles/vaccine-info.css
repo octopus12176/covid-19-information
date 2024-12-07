@@ -21,6 +21,26 @@
   gap: 10px;
 }
 
+/* リストスタイルの調整 */
+.detail-section ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.detail-section ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.detail-section ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
 /* 効果と副反応のスタイル */
 .effects-grid {
   display: grid;
@@ -52,12 +72,12 @@
 
 .caution-list ul {
   list-style: none;
-  padding: 0;
+  padding-left: 1.5rem;
 }
 
 .caution-list li {
   margin-bottom: 8px;
-  padding-left: 20px;
+  padding-left: 1.5rem;
   position: relative;
 }
 
@@ -73,5 +93,10 @@
   .vaccine-types,
   .effects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .detail-section ul,
+  .caution-list ul {
+    padding-left: 1rem;
   }
 }

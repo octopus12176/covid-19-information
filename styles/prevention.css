@@ -21,6 +21,26 @@
   gap: 10px;
 }
 
+/* リストスタイルの調整 */
+.detail-section ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.detail-section ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.detail-section ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
 /* 感染リスクの表示スタイル */
 .risk-levels {
   margin: 20px 0;
@@ -28,7 +48,7 @@
 
 .risk-item {
   background: var(--background);
-  padding: 15px;
+  padding: 15px 15px 15px 1.5rem;
   border-radius: 8px;
   margin-bottom: 15px;
   border-left: 4px solid;
@@ -53,6 +73,7 @@
 .test-kit-steps {
   counter-reset: step;
   margin: 20px 0;
+  padding-left: 1.5rem;
 }
 
 .step-item {
@@ -96,5 +117,13 @@
 @media (max-width: 768px) {
   .ventilation-methods {
     grid-template-columns: 1fr;
+  }
+
+  .detail-section ul {
+    padding-left: 1rem;
+  }
+
+  .test-kit-steps {
+    padding-left: 1rem;
   }
 }
