@@ -18,7 +18,7 @@
       </header>
 
       <div class="grid">
-        <div class="card">
+        <a href="basic-info.html" class="card">
           <h2><i class="fas fa-virus"></i> 新型コロナウイルスの基本情報</h2>
           <ul>
             <li>飛沫感染・接触感染が主な感染経路</li>
@@ -28,9 +28,9 @@
           <div class="source">
             出典：厚生労働省 新型コロナウイルス感染症について
           </div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="vaccine-info.html" class="card">
           <h2><i class="fas fa-syringe"></i> ワクチンについて</h2>
           <ul>
             <li>mRNAワクチンと従来型ワクチンの特徴</li>
@@ -38,9 +38,9 @@
             <li>副反応と経過観察の重要性</li>
           </ul>
           <div class="source">出典：厚生労働省 新型コロナワクチンについて</div>
-        </div>
+        </a>
 
-        <div class="card">
+        <a href="prevention.html" class="card">
           <h2><i class="fas fa-shield-virus"></i> 最新の感染対策</h2>
           <ul>
             <li>効果的な換気方法</li>
@@ -48,13 +48,14 @@
             <li>検査キットの正しい使用方法</li>
           </ul>
           <div class="source">出典：国立感染症研究所 感染対策ガイドライン</div>
-        </div>
+        </a>
       </div>
 
       <div class="section-container">
         <h2>
           <i class="fas fa-check-circle"></i> よくある誤情報とファクトチェック
         </h2>
+
         <div class="fact-check-card">
           <h3>誤情報例：ワクチンのDNA組み換えについて</h3>
           <div class="fact-content">
@@ -65,6 +66,45 @@
             <div class="source">ファクトチェック元：WHO（世界保健機関）</div>
           </div>
         </div>
+
+        <div class="fact-check-card">
+          <h3>誤情報例：自然免疫と予防接種</h3>
+          <div class="fact-content">
+            <p class="misinformation">
+              誤った情報：自然感染の方が免疫力が高まる
+            </p>
+            <p class="fact">
+              科学的事実：ワクチン接種の方が安全に免疫を獲得できます
+            </p>
+            <div class="source">
+              ファクトチェック元：CDC（アメリカ疾病予防管理センター）
+            </div>
+          </div>
+        </div>
+
+        <div class="fact-check-card">
+          <h3>誤情報例：マスクの効果</h3>
+          <div class="fact-content">
+            <p class="misinformation">
+              誤った情報：マスクは感染予防に効果がない
+            </p>
+            <p class="fact">
+              科学的事実：適切なマスク着用は飛沫感染のリスクを大幅に低減します
+            </p>
+            <div class="source">ファクトチェック元：国立感染症研究所</div>
+          </div>
+        </div>
+
+        <div class="more-info-card">
+          <a href="factcheck.html" class="more-info-link">
+            <i class="fas fa-info-circle"></i>
+            <div class="more-info-content">
+              <h3>さらに詳しい誤情報とファクトチェックを見る</h3>
+              <p>その他の誤情報や詳細な科学的根拠について確認できます</p>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
       </div>
 
       <div class="section-divider"></div>
@@ -72,29 +112,71 @@
       <div class="section-container">
         <h2><i class="fas fa-shield-alt"></i> 信頼できる情報源</h2>
         <div class="trusted-sources-section">
-          <div class="sources-grid">
-            <div class="source-card">
-              <i class="fas fa-hospital source-icon"></i>
-              <div class="source-content">
-                <h4>厚生労働省</h4>
-                <p>新型コロナウイルス感染症について</p>
-              </div>
-            </div>
+          <!-- 国内の情報源 -->
+          <div class="sources-category">
+            <h3><i class="fas fa-map-marker-alt"></i> 国内の公的機関</h3>
+            <div class="sources-grid">
+              <a
+                href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html"
+                class="source-card"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-hospital source-icon"></i>
+                <div class="source-content">
+                  <h4>厚生労働省</h4>
+                  <p>新型コロナウイルス感染症について</p>
+                </div>
+                <i class="fas fa-external-link-alt external-icon"></i>
+              </a>
 
-            <div class="source-card">
-              <i class="fas fa-globe source-icon"></i>
-              <div class="source-content">
-                <h4>WHO</h4>
-                <p>世界保健機関 公式情報</p>
-              </div>
+              <a
+                href="https://www.niid.go.jp/niid/ja/diseases/ka/corona-virus/covid-19.html"
+                class="source-card"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-microscope source-icon"></i>
+                <div class="source-content">
+                  <h4>国立感染症研究所</h4>
+                  <p>感染対策ガイドライン</p>
+                </div>
+                <i class="fas fa-external-link-alt external-icon"></i>
+              </a>
             </div>
+          </div>
 
-            <div class="source-card">
-              <i class="fas fa-microscope source-icon"></i>
-              <div class="source-content">
-                <h4>国立感染症研究所</h4>
-                <p>感染対策ガイドライン</p>
-              </div>
+          <!-- 世界の情報源 -->
+          <div class="sources-category">
+            <h3><i class="fas fa-globe"></i> 世界の公的機関</h3>
+            <div class="sources-grid">
+              <a
+                href="https://www.who.int/japan/emergencies/covid-19-response"
+                class="source-card"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-globe-asia source-icon"></i>
+                <div class="source-content">
+                  <h4>WHO</h4>
+                  <p>世界保健機関 公式情報</p>
+                </div>
+                <i class="fas fa-external-link-alt external-icon"></i>
+              </a>
+
+              <a
+                href="https://www.cdc.gov/covid/index.html"
+                class="source-card"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-clinic-medical source-icon"></i>
+                <div class="source-content">
+                  <h4>CDC</h4>
+                  <p>アメリカ疾病予防管理センター COVID-19情報</p>
+                </div>
+                <i class="fas fa-external-link-alt external-icon"></i>
+              </a>
             </div>
           </div>
         </div>
