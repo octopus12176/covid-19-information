@@ -11,7 +11,7 @@
     <!-- 共通のスタイル -->
     <link href="styles/base.css" rel="stylesheet" />
     <!-- 詳細ページの場合 -->
-    <link href="styles/detail.css" rel="stylesheet">
+    <link href="styles/detail.css" rel="stylesheet" />
     <!-- ページ固有のスタイル -->
     <link href="styles/basic-info.css" rel="stylesheet" />
   </head>
@@ -104,11 +104,15 @@
       </div>
 
       <footer>
-        <p>最終更新日：[更新日を入力]</p>
+        <p>最終更新日：<span class="last-updated-date"></span></p>
         <p>
-          ※この情報は定期的に更新されます。最新の情報は各公的機関のウェブサイトでご確認ください。
+          ※このページの情報は定期的に更新されます。最新の情報は各公的機関のウェブサイトでご確認ください。
         </p>
       </footer>
     </div>
   </body>
 </html>
+
+<!-- JavaScriptファイルの読み込み -->
+<script src="js/config.js"></script>
+<script src="js/updateDate.js"></script>
