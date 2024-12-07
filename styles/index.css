@@ -1,0 +1,154 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.section-container {
+  margin-bottom: 60px;
+}
+
+.section-divider {
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(37, 99, 235, 0.1),
+    rgba(37, 99, 235, 0.2),
+    rgba(37, 99, 235, 0.1)
+  );
+  margin: 40px 0;
+}
+
+/* ファクトチェックセクション */
+.fact {
+  color: red;
+}
+
+.fact-check-card {
+  background: #fff8e1;
+  border-left: 4px solid #ff9800;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.fact-content {
+  margin-top: 15px;
+}
+
+.more-info-card {
+  background: var(--primary);
+  border-radius: 15px;
+  margin-top: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.more-info-link {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.more-info-content {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+/* 信頼できる情報源セクション */
+.sources-category {
+  margin-bottom: 40px;
+}
+
+.sources-category h3 {
+  color: var(--primary);
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.source-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.source-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.source-icon {
+  font-size: 24px;
+  color: var(--primary);
+  margin-right: 15px;
+}
+
+.source-content h4 {
+  margin: 0;
+  color: var(--text);
+}
+
+.source-content p {
+  margin: 5px 0 0 0;
+  color: var(--text-light);
+  font-size: 0.9em;
+}
+
+.external-icon {
+  font-size: 14px;
+  color: var(--primary);
+  margin-left: 10px;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sources-grid {
+    grid-template-columns: 1fr;
+  }
+}
