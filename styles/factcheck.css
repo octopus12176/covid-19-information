@@ -30,14 +30,38 @@
   font-size: 24px;
   margin-right: 15px;
   margin-top: 3px;
+  color: #059669;
 }
 
 .misinformation-box i {
   color: #dc2626;
 }
 
-.fact-box i {
+.fact-box div h4 + p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 12px 0;
+  color: #065f46;
+  font-weight: 500;
+}
+
+.fact-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.fact-box ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+.fact-box ul li::before {
+  content: '✓';
   color: #059669;
+  position: absolute;
+  left: 0;
 }
 
 .evidence-list {
@@ -55,6 +79,33 @@
   color: #059669;
   position: absolute;
   left: -20px;
+}
+
+.fact-content {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.misinformation-box div,
+.fact-box div {
+  flex-grow: 1;
+}
+
+/* 見出しのスタイル */
+.fact-box h4,
+.misinformation-box h4 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+/* ソース情報のスタイル */
+.source {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
 }
 
 @media (max-width: 768px) {
