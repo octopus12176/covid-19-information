@@ -197,6 +197,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   color: inherit;
+  width: 100%;
 }
 
 .learning-card:hover {
@@ -309,5 +310,21 @@
 
   .section-divider {
     margin: 40px 0;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .learning-card {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .card-content {
+    padding: 0;
   }
 }
