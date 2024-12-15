@@ -334,14 +334,25 @@
 
 .source-item li {
   margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+}
+
+.source-item li a {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.source-item li a:hover {
+  text-decoration: underline;
 }
 
 .publication-date {
-  color: #6b7280;
+  display: block;
+  color: var(--text-light);
   font-size: 0.9em;
+  margin-left: 0;
 }
 
 /* ナビゲーションリンク */
