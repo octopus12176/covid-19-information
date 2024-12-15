@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ワクチンの基礎知識 | COVID-19情報ポータル</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/base.css" rel="stylesheet" />
+    <link href="styles/detail.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> トップページに戻る
+      </a>
+
+      <header class="detail-header">
+        <h1>
+          <i class="fas fa-book-medical"></i>
+          ワクチンの基礎知識
+        </h1>
+        <p>ワクチンの種類と仕組みについて、科学的な観点から解説します</p>
+      </header>
+
+      <div class="content-section">
+        <section class="info-block">
+          <h2>ワクチンとは</h2>
+          <p>
+            ワクチンは、病原体の一部や無毒化した病原体を用いて、体の免疫システムを活性化し、
+            特定の感染症に対する防御力を獲得させる医薬品です。
+          </p>
+        </section>
+
+        <section class="info-block">
+          <h2>主なワクチンの種類</h2>
+
+          <div class="vaccine-type">
+            <h3><i class="fas fa-dna"></i> mRNAワクチン</h3>
+            <div class="type-content">
+              <p>
+                ウイルスのスパイクタンパク質を作るための設計図（mRNA）を使用します。
+              </p>
+              <ul>
+                <li>体内でスパイクタンパク質を一時的に作り出します</li>
+                <li>DNAには影響を与えません</li>
+                <li>数日で分解される一時的な物質です</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="vaccine-type">
+            <h3><i class="fas fa-virus"></i> 従来型ワクチン</h3>
+            <div class="type-content">
+              <p>不活化したウイルスや弱毒化したウイルスを使用します。</p>
+              <ul>
+                <li>長年の使用実績があります</li>
+                <li>安定した免疫反応を引き起こします</li>
+                <li>製造に時間がかかります</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="vaccine-type">
+            <h3><i class="fas fa-sync"></i> レプリコンワクチン</h3>
+            <div class="type-content">
+              <p>
+                ウイルスの複製能力を利用して、より効率的な免疫応答を引き起こします。
+              </p>
+              <ul>
+                <li>少ない投与量で効果が得られます</li>
+                <li>複製は時間的・量的に制限されています</li>
+                <li>スパイクタンパク質のみを作り出します</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-block">
+          <h2>ワクチンの作用の仕組み</h2>
+          <div class="mechanism-steps">
+            <div class="step-container">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>接種</h4>
+                  <p>ワクチンが体内に投与されます</p>
+                </div>
+              </div>
+              <i class="fas fa-chevron-right step-arrow"></i>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>認識</h4>
+                  <p>免疫システムがワクチンを認識します</p>
+                </div>
+              </div>
+              <i class="fas fa-chevron-right step-arrow"></i>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>免疫反応</h4>
+                  <p>抗体が作られます</p>
+                </div>
+              </div>
+              <i class="fas fa-chevron-right step-arrow"></i>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h4>免疫記憶</h4>
+                  <p>免疫記憶が形成されます</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-block">
+          <h2>重要なポイント</h2>
+          <div class="key-points">
+            <div class="point">
+              <i class="fas fa-check-circle"></i>
+              <h4>安全性</h4>
+              <p>各種ワクチンは厳格な臨床試験を経て承認されています</p>
+            </div>
+            <div class="point">
+              <i class="fas fa-check-circle"></i>
+              <h4>有効性</h4>
+              <p>重症化予防に高い効果があることが確認されています</p>
+            </div>
+            <div class="point">
+              <i class="fas fa-check-circle"></i>
+              <h4>副反応</h4>
+              <p>一般的な副反応は一時的で、重篤な副反応は極めて稀です</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <p>最終更新日：<span class="last-updated-date"></span></p>
+        <p>
+          ※このページの情報は定期的に更新されます。最新の情報は各公的機関のウェブサイトでご確認ください。
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/updateDate.js"></script>
+  </body>
+</html>

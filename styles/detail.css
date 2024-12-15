@@ -54,8 +54,342 @@
   border-radius: 8px;
 }
 
+/* ワクチンタイプのスタイル */
+.vaccine-type {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.vaccine-type h3 {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.type-content {
+  margin-left: 34px;
+}
+
+.type-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.type-content li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.type-content li::before {
+  content: '•';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+/* 重要ポイントのスタイル */
+.key-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.point {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.point i {
+  color: var(--primary);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.point h4 {
+  color: var(--primary);
+  margin: 10px 0;
+}
+
+.info-block {
+  margin-bottom: 40px;
+}
+
+/* タイムライン表示のスタイル */
+.timeline {
+  position: relative;
+  margin: 30px 0;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: var(--primary);
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid white;
+}
+
+.year {
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.event h4 {
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.event p {
+  color: var(--text-light);
+}
+
+/* 免疫細胞タイプのスタイル */
+.cell-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cell-type {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cell-type h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.cell-type i {
+  font-size: 12px;
+}
+
+.cell-type ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cell-type li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.cell-type li::before {
+  content: '•';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+/* 免疫タイプのスタイル */
+.immune-type {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.immune-type h3 {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.type-content {
+  margin-left: 34px;
+}
+
+/* 開発プロセスのスタイル */
+.development-process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.process-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.process-item h4 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.process-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.process-item li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.process-item li::before {
+  content: '→';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+.mechanism-steps {
+  margin: 30px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.step-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 20px 10px;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.step-content h4 {
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.step-content p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.step-arrow {
+  color: var(--primary);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
   .detail-section {
     padding: 20px;
+  }
+
+  .key-points {
+    grid-template-columns: 1fr;
+  }
+
+  .vaccine-type {
+    padding: 20px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+  }
+
+  .cell-types,
+  .development-process {
+    grid-template-columns: 1fr;
+  }
+
+  .immune-type {
+    padding: 20px;
+  }
+
+  .type-content {
+    margin-left: 20px;
+  }
+
+  .step-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .step {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
   }
 }
