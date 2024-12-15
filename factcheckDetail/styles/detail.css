@@ -374,6 +374,101 @@
   margin-right: 8px;
 }
 
+/* 病原体比較のスタイル */
+.virus-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.virus-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.virus-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.virus-header i {
+  font-size: 24px;
+}
+
+.virus-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.virus-content li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.virus-content strong {
+  color: var(--primary);
+  margin-right: 8px;
+}
+
+.versus-icon {
+  color: var(--primary);
+  font-size: 24px;
+}
+
+/* 医療システムへの影響のスタイル */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.impact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.impact-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.impact-header i {
+  font-size: 24px;
+}
+
+.impact-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-content li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.impact-content li::before {
+  content: '•';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
 /* フッター */
 footer {
   margin-top: 60px;
@@ -446,6 +541,18 @@ footer p {
 
   .publication-date {
     margin-top: 5px;
+  }
+
+  .virus-grid {
+    flex-direction: column;
+  }
+
+  .versus-icon {
+    transform: rotate(90deg);
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
   }
 }
 
