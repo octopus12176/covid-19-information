@@ -101,11 +101,32 @@
 
 /* ソース情報のスタイル */
 .source {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.9em;
   color: #666;
   margin-top: 15px;
   padding-top: 10px;
   border-top: 1px solid #e5e7eb;
+}
+
+.more-details-link {
+  display: inline-flex;
+  align-items: center;
+  color: #059669;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.more-details-link:hover {
+  color: #047857;
+}
+
+.more-details-link i {
+  margin-left: 6px;
+  font-size: 0.9em;
 }
 
 @media (max-width: 768px) {
@@ -116,5 +137,11 @@
   .misinformation-box,
   .fact-box {
     padding: 15px;
+  }
+
+  .source {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
   }
 }
