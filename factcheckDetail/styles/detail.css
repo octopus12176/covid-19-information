@@ -469,6 +469,124 @@
   left: 0;
 }
 
+/* 予防と対策のステップのスタイル */
+.prevention-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.prevention-steps .step {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.prevention-steps .step-number {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.prevention-steps .step h4 {
+  color: var(--primary);
+  margin: 15px 0 10px;
+}
+
+.prevention-steps .step p {
+  color: var(--text);
+  margin: 0;
+}
+
+.symptoms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.symptom-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.symptom-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.symptom-header i {
+  color: var(--primary);
+  font-size: 24px;
+}
+
+.symptom-header h4 {
+  color: var(--primary);
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.symptom-content {
+  margin-bottom: 15px;
+}
+
+.symptom-content h5 {
+  color: var(--primary);
+  margin: 20px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.symptom-content h5:first-child {
+  margin-top: 0;
+}
+
+.symptom-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.symptom-content ul:last-child {
+  margin-bottom: 0;
+}
+
+.symptom-content li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.symptom-content li::before {
+  content: '•';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
 /* フッター */
 footer {
   margin-top: 60px;
@@ -480,6 +598,12 @@ footer {
 
 footer p {
   margin: 5px 0;
+}
+
+@media (max-width: 1024px) {
+  .symptoms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* レスポンシブデザイン */
@@ -553,6 +677,22 @@ footer p {
 
   .impact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .prevention-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .prevention-steps .step {
+    padding: 20px;
+  }
+
+  .symptoms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .symptom-card {
+    padding: 20px;
   }
 }
 
