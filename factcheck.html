@@ -29,231 +29,256 @@
         <p>科学的根拠に基づいて、よくある誤情報を検証します</p>
       </header>
 
-      <div class="detail-section">
-        <h2>ワクチンに関する誤情報</h2>
+      <div class="detail-section accordion-section">
+        <button class="section-toggle">
+          <h2>
+            <i class="fas fa-syringe"></i>
+            ワクチンに関する誤情報
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </h2>
+        </button>
+        <div class="section-content hidden">
+          <div class="fact-check-item">
+            <h3>DNA改変について</h3>
+            <div class="misinformation-box">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <h4>誤った情報</h4>
+                <p>ワクチンによってDNAが改変される</p>
+              </div>
+            </div>
+            <div class="fact-box">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>科学的事実</h4>
+                <p>
+                  mRNAワクチンはDNAに影響を与えません。mRNAは細胞の核に入らず、DNAと相互作用しません。
+                </p>
+                <ul class="evidence-list">
+                  <li>mRNAは細胞質内でのみ働きます</li>
+                  <li>数日で分解される一時的な物質です</li>
+                  <li>遺伝情報を変更する機能はありません</li>
+                </ul>
+              </div>
+            </div>
+            <div class="source">
+              <a
+                href="https://www3.nhk.or.jp/news/special/coronavirus/vaccine/qa/detail/more-detail/qa_05_a11.html"
+              >
+                ファクトチェック元：NHK
+              </a>
+              <a
+                href="factcheckDetail/dna-details.html"
+                class="more-details-link"
+              >
+                <i class="fas fa-arrow-right"></i> もっと詳しく
+              </a>
+            </div>
+          </div>
 
-        <div class="fact-check-item">
-          <h3>DNA改変について</h3>
-          <div class="misinformation-box">
-            <i class="fas fa-times-circle"></i>
-            <div>
-              <h4>誤った情報</h4>
-              <p>ワクチンによってDNAが改変される</p>
+          <div class="fact-check-item">
+            <h3>レプリコンワクチンの危険性について</h3>
+            <div class="misinformation-box">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <h4>誤った情報</h4>
+                <p>レプリコンワクチンは体内で無限に増殖して危険</p>
+              </div>
+            </div>
+            <div class="fact-box">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>科学的事実</h4>
+                <p>
+                  レプリコンワクチンの自己複製は厳密に制御されており、無限に増殖することはありません。
+                </p>
+                <ul class="evidence-list">
+                  <li>複製は時間的・量的に制限されています</li>
+                  <li>一定期間後に自然に分解されます</li>
+                  <li>臨床試験で安全性が確認されています</li>
+                  <li>従来のワクチンより少ない投与量で効果が得られます</li>
+                </ul>
+              </div>
+            </div>
+            <div class="source">
+              <a href="https://www.mhlw.go.jp/content/10906000/001316061.pdf">
+                ファクトチェック元：厚生労働省
+              </a>
+              <a
+                href="factcheckDetail/replicon-details.html"
+                class="more-details-link"
+              >
+                <i class="fas fa-arrow-right"></i> もっと詳しく
+              </a>
             </div>
           </div>
-          <div class="fact-box">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h4>科学的事実</h4>
-              <p>
-                mRNAワクチンはDNAに影響を与えません。mRNAは細胞の核に入らず、DNAと相互作用しません。
-              </p>
-              <ul class="evidence-list">
-                <li>mRNAは細胞質内でのみ働きます</li>
-                <li>数日で分解される一時的な物質です</li>
-                <li>遺伝情報を変更する機能はありません</li>
-              </ul>
+
+          <div class="fact-check-item">
+            <h3>自然免疫と予防接種</h3>
+            <div class="misinformation-box">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <h4>誤った情報</h4>
+                <p>自然感染の方が免疫力が高まる</p>
+              </div>
+            </div>
+            <div class="fact-box">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>科学的事実</h4>
+                <p>ワクチン接種の方が安全に効果的な免疫を獲得できます。</p>
+                <ul class="evidence-list">
+                  <li>重症化リスクを避けて免疫を獲得できます</li>
+                  <li>免疫応答が予測可能で安定しています</li>
+                  <li>後遺症のリスクを回避できます</li>
+                </ul>
+              </div>
+            </div>
+            <div class="source">
+              <a
+                href="https://news.yahoo.co.jp/expert/articles/4c7d442ec47a784c6497be08665e12c402603289"
+              >
+                ファクトチェック元：Yahoo!ニュース
+              </a>
+              <a
+                href="factcheckDetail/immunity-details.html"
+                class="more-details-link"
+              >
+                <i class="fas fa-arrow-right"></i> もっと詳しく
+              </a>
             </div>
           </div>
-          <div class="source">
-            <a
-              href="https://www3.nhk.or.jp/news/special/coronavirus/vaccine/qa/detail/more-detail/qa_05_a11.html"
-              >ファクトチェック元：NHK</a
-            >
-            <a
-              href="factcheckDetail/dna-details.html"
-              class="more-details-link"
-            >
-              <i class="fas fa-arrow-right"></i> もっと詳しく
-            </a>
+
+          <div class="fact-check-item">
+            <h3>不妊への影響について</h3>
+            <div class="misinformation-box">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <h4>誤った情報</h4>
+                <p>新型コロナワクチンは不妊の原因となる</p>
+              </div>
+            </div>
+            <div class="fact-box">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>科学的事実</h4>
+                <p>
+                  新型コロナワクチンが不妊を引き起こすという科学的証拠はありません。
+                </p>
+                <ul class="evidence-list">
+                  <li>妊娠を望む方も安全に接種できます</li>
+                  <li>生殖機能への悪影響は確認されていません</li>
+                  <li>妊活中の方にも推奨されています</li>
+                  <li>
+                    むしろ、感染による重症化を防ぐことで、妊娠・出産時のリスクを低減できます
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="source">
+              <a
+                href="http://jsidog.kenkyuukai.jp/images/sys/information/20210721190701-57649255BD0A756A3E48F8FEB3D9AC5B55FDB9F89BB2D2EFC9C5AA308C98CC3D.pdf"
+              >
+                ファクトチェック元：⽇本産婦⼈科感染症学会
+              </a>
+              <a
+                href="factcheckDetail/infertility-details.html"
+                class="more-details-link"
+              >
+                <i class="fas fa-arrow-right"></i> もっと詳しく
+              </a>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="fact-check-item">
-          <h3>レプリコンワクチンの危険性について</h3>
-          <div class="misinformation-box">
-            <i class="fas fa-times-circle"></i>
-            <div>
-              <h4>誤った情報</h4>
-              <p>レプリコンワクチンは体内で無限に増殖して危険</p>
+      <div class="detail-section accordion-section">
+        <button class="section-toggle">
+          <h2>
+            <i class="fas fa-head-side-mask"></i>
+            感染予防に関する誤情報
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </h2>
+        </button>
+        <div class="section-content hidden">
+          <div class="fact-check-item">
+            <h3>マスクの効果</h3>
+            <div class="misinformation-box">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <h4>誤った情報</h4>
+                <p>マスクは感染予防に効果がない</p>
+              </div>
+            </div>
+            <div class="fact-box">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>科学的事実</h4>
+                <p>適切なマスク着用は飛沫感染のリスクを大幅に低減します。</p>
+                <ul class="evidence-list">
+                  <li>飛沫の拡散を効果的に防ぎます</li>
+                  <li>他者への感染予防に特に効果的です</li>
+                  <li>密閉空間での感染リスクを低減します</li>
+                </ul>
+              </div>
+            </div>
+            <div class="source">
+              <a
+                href="https://www.nikkei.com/nstyle-article/DGXMZO66377290Y0A111C2000000/"
+              >
+                ファクトチェック元：日本経済新聞
+              </a>
             </div>
           </div>
-          <div class="fact-box">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h4>科学的事実</h4>
-              <p>
-                レプリコンワクチンの自己複製は厳密に制御されており、無限に増殖することはありません。
-              </p>
-              <ul class="evidence-list">
-                <li>複製は時間的・量的に制限されています</li>
-                <li>一定期間後に自然に分解されます</li>
-                <li>臨床試験で安全性が確認されています</li>
-                <li>従来のワクチンより少ない投与量で効果が得られます</li>
-              </ul>
-            </div>
-          </div>
-          <div class="source">
-            <a href="https://www.mhlw.go.jp/content/10906000/001316061.pdf">
-              ファクトチェック元：厚生労働省
-            </a>
-            <a
-              href="factcheckDetail/replicon-details.html"
-              class="more-details-link"
-            >
-              <i class="fas fa-arrow-right"></i> もっと詳しく
-            </a>
-          </div>
-        </div>
 
-        <div class="fact-check-item">
-          <h3>自然免疫と予防接種</h3>
-          <div class="misinformation-box">
-            <i class="fas fa-times-circle"></i>
-            <div>
-              <h4>誤った情報</h4>
-              <p>自然感染の方が免疫力が高まる</p>
+          <div class="fact-check-item">
+            <h3>消毒と除菌</h3>
+            <div class="misinformation-box">
+              <i class="fas fa-times-circle"></i>
+              <div>
+                <h4>誤った情報</h4>
+                <p>アルコール消毒は体内のウイルスも殺す</p>
+              </div>
             </div>
-          </div>
-          <div class="fact-box">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h4>科学的事実</h4>
-              <p>ワクチン接種の方が安全に効果的な免疫を獲得できます。</p>
-              <ul class="evidence-list">
-                <li>重症化リスクを避けて免疫を獲得できます</li>
-                <li>免疫応答が予測可能で安定しています</li>
-                <li>後遺症のリスクを回避できます</li>
-              </ul>
+            <div class="fact-box">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>科学的事実</h4>
+                <p>
+                  アルコール消毒は体表面のウイルスの不活化には効果的ですが、体内のウイルスには効果がありません。
+                </p>
+                <ul class="evidence-list">
+                  <li>手指や物品表面の消毒に有効です</li>
+                  <li>体内に入ったウイルスには効果がありません</li>
+                  <li>過度な消毒は皮膚への刺激となる可能性があります</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="source">
-            <a
-              href="https://news.yahoo.co.jp/expert/articles/4c7d442ec47a784c6497be08665e12c402603289"
-            >
-              ファクトチェック元：Yahoo!ニュース</a
-            >
-            <a
-              href="factcheckDetail/immunity-details.html"
-              class="more-details-link"
-            >
-              <i class="fas fa-arrow-right"></i> もっと詳しく
-            </a>
-          </div>
-        </div>
-
-        <div class="fact-check-item">
-          <h3>不妊への影響について</h3>
-          <div class="misinformation-box">
-            <i class="fas fa-times-circle"></i>
-            <div>
-              <h4>誤った情報</h4>
-              <p>新型コロナワクチンは不妊の原因となる</p>
-            </div>
-          </div>
-          <div class="fact-box">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h4>科学的事実</h4>
-              <p>
-                新型コロナワクチンが不妊を引き起こすという科学的証拠はありません。
-              </p>
-              <ul class="evidence-list">
-                <li>妊娠を望む方も安全に接種できます</li>
-                <li>生殖機能への悪影響は確認されていません</li>
-                <li>妊活中の方にも推奨されています</li>
-                <li>
-                  むしろ、感染による重症化を防ぐことで、妊娠・出産時のリスクを低減できます
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="source">
-            <a
-              href="http://jsidog.kenkyuukai.jp/images/sys/information/20210721190701-57649255BD0A756A3E48F8FEB3D9AC5B55FDB9F89BB2D2EFC9C5AA308C98CC3D.pdf"
-            >
-              ファクトチェック元：⽇本産婦⼈科感染症学会
-            </a>
-            <a
-              href="factcheckDetail/infertility-details.html"
-              class="more-details-link"
-            >
-              <i class="fas fa-arrow-right"></i> もっと詳しく
-            </a>
+            <div class="source">ファクトチェック元：厚生労働省</div>
           </div>
         </div>
       </div>
 
-      <div class="detail-section">
-        <h2>感染予防に関する誤情報</h2>
-
-        <div class="fact-check-item">
-          <h3>マスクの効果</h3>
-          <div class="misinformation-box">
-            <i class="fas fa-times-circle"></i>
-            <div>
-              <h4>誤った情報</h4>
-              <p>マスクは感染予防に効果がない</p>
-            </div>
+      <div class="detail-section accordion-section">
+        <button class="section-toggle">
+          <h2>
+            <i class="fas fa-book-medical"></i>
+            参考資料・信頼できる情報源
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </h2>
+        </button>
+        <div class="section-content hidden">
+          <div class="reference-list">
+            <h3>ファクトチェックに関する主な情報源</h3>
+            <ul>
+              <li><a href="#">WHO（世界保健機関）COVID-19関連情報</a></li>
+              <li>
+                <a href="#">厚生労働省 新型コロナウイルス感染症について</a>
+              </li>
+              <li><a href="#">国立感染症研究所 ファクトシート</a></li>
+              <li><a href="#">CDC COVID-19 Myths and Facts</a></li>
+            </ul>
           </div>
-          <div class="fact-box">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h4>科学的事実</h4>
-              <p>適切なマスク着用は飛沫感染のリスクを大幅に低減します。</p>
-              <ul class="evidence-list">
-                <li>飛沫の拡散を効果的に防ぎます</li>
-                <li>他者への感染予防に特に効果的です</li>
-                <li>密閉空間での感染リスクを低減します</li>
-              </ul>
-            </div>
-          </div>
-          <div class="source">
-            <a
-              href="https://www.nikkei.com/nstyle-article/DGXMZO66377290Y0A111C2000000/"
-            >
-              ファクトチェック元：日本経済新聞</a
-            >
-          </div>
-        </div>
-
-        <div class="fact-check-item">
-          <h3>消毒と除菌</h3>
-          <div class="misinformation-box">
-            <i class="fas fa-times-circle"></i>
-            <div>
-              <h4>誤った情報</h4>
-              <p>アルコール消毒は体内のウイルスも殺す</p>
-            </div>
-          </div>
-          <div class="fact-box">
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h4>科学的事実</h4>
-              <p>
-                アルコール消毒は体表面のウイルスの不活化には効果的ですが、体内のウイルスには効果がありません。
-              </p>
-              <ul class="evidence-list">
-                <li>手指や物品表面の消毒に有効です</li>
-                <li>体内に入ったウイルスには効果がありません</li>
-                <li>過度な消毒は皮膚への刺激となる可能性があります</li>
-              </ul>
-            </div>
-          </div>
-          <div class="source">ファクトチェック元：厚生労働省</div>
-        </div>
-      </div>
-
-      <div class="detail-section">
-        <h2>参考資料・信頼できる情報源</h2>
-        <div class="reference-list">
-          <h3>ファクトチェックに関する主な情報源</h3>
-          <ul>
-            <li><a href="#">WHO（世界保健機関）COVID-19関連情報</a></li>
-            <li><a href="#">厚生労働省 新型コロナウイルス感染症について</a></li>
-            <li><a href="#">国立感染症研究所 ファクトシート</a></li>
-            <li><a href="#">CDC COVID-19 Myths and Facts</a></li>
-          </ul>
         </div>
       </div>
 
@@ -264,9 +289,10 @@
         </p>
       </footer>
     </div>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="js/config.js"></script>
+    <script src="js/updateDate.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>
-
-<!-- JavaScriptファイルの読み込み -->
-<script src="js/config.js"></script>
-<script src="js/updateDate.js"></script>
